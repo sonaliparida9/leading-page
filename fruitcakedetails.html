@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>product details</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="E-commerce.css">
+  <style>
+    body{
+        background-color: #2e1700;
+        color:white;
+    }
+    .small-img-group{
+      display: flex;
+      justify-content: space-between;
+     
+
+    }
+    .small-img-col{
+       flex-basis: 24%; 
+      cursor: pointer;
+
+    }
+
+    .sproduct select{
+      display: block;
+      padding: 5px 10px;
+      background:rgba(161,109,14,1);
+    }
+    .sproduct .img-fluid{
+      background-color: rgba(161,109,14,1);
+      margin-bottom: 10px;
+    }
+    .sproduct input{
+      width: 50px;
+      height: 30px;
+      padding-left: 10px;
+      font-size: 16px;
+      margin-right: 10px;
+      outline: none;
+      background:rgba(161,109,14,1);
+    }
+    .buy-btn{
+      background:rgba(161,109,14,1);
+      transition: 0.3s all;
+       opacity: 1; 
+    }
+    .col-md-6 h6{
+      color:  rgb(237, 222, 194);
+    }
+    .col-md-6 h3{
+      color:rgb(226, 188, 115) ;
+    }
+    .col-md-6 h2{
+      color:rgb(209, 178, 120) ;
+    }
+    .col-md-6 h4{
+      color: rgb(223, 204, 167);
+      font-weight: bold;
+    }
+    .col-md-6 span{
+      color:rgb(228, 194, 130) ;
+    }
+    .container h1{
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: center;
+    color: rgba(161,109,14,1);
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgba(161,109,14,1); 
+    }
+    .card{
+    height: 100%;
+    background-color: rgba(161,109,14,1);
+    margin-bottom: 10%; 
+
+}
+    .container .star{
+        color: gold;
+    }
+ 
+   
+   
+</style>
+</head>
+
+<body>
+
+   <div class="parent1">
+    <div class="logo">
+      
+
+      <div class="container"> 
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" alt="Bootstrap" width="30" height="24">Cake Bakery
+        </a>
+      </div>
+    </div>
+    
+
+
+    <!-- navbar -->
+    <div class="navbar">
+    <nav class="navbar navbar-expand-lg ">
+      
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="E-commerce.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="E-commerce.html">catagory</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="E-commerce.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="E-commerce.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="E-commerce.html">Contact</a>
+            </li>
+      
+          </ul>
+        </div>
+    </nav>
+  </div>
+  
+  <div class="icons">
+      <a href="" class="cart-bar"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart</a>
+      <a href="" class="login-bar"><i class="fa fa-user" aria-hidden="true"></i>Login </a>
+    </div>
+  </div>
+
+
+  <section class=" container sproduct my-5 pt-5">
+    <div class="row mt-4">
+      <div class="col-md-6 ">
+        <img  class="img-fluid w-100"src="birthday4.png" id="main_image" class="img-fluid" alt="">
+
+        <div class="small-img-group">
+          <div class="small-img-col">
+          <img src="fruitcake.jpg" width="100%" onclick="changeimage(this.src)" class="img-fluid" alt="">
+          </div>
+          <div class="small-img-col">
+            <img src="fruitcake1.jpg" width="100%"onclick="changeimage(this.src)" class="img-fluid" alt="">
+            </div>
+            <div class="small-img-col">
+              <img src="fruitcake.jpg" width="100%"  onclick="changeimage(this.src)" class="img-fluid" alt="">
+              </div>
+              <div class="small-img-col">
+                <img src="fruitcake3.jpg" width="100%" height="66%"onclick="changeimage(this.src)" class="small-img" alt="">
+                </div>
+        </div>
+      </div>
+      <div class="col-md-6 my-3 pt-4 ">
+        <h6>Home / cake</h6>
+        <h3>Fruit Overload Cake-Half Kg Eggless</h3>
+        <h2>$575.00</h2>
+        <select class="my-3">
+          <option>select size</option>
+          <option>large</option>
+          <option>medium</option>
+          <option>small</option>
+          <option>mini</option>
+        </select>
+        <input type="number" value="1">
+       <a href="cart.html" target="_blank"><button class="buy-btn">Add To Cart</button></a>
+        <h4 class="mt-3 mb-3">Product Details</h4>
+        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit aspernatur impedit tempora officiis totam. Non nam ut, deleniti eos delectus voluptatibus sequi quia repellendus perspiciatis eum dicta odio quibusdam enim.</span>
+      </div>
+    </div>
+  </section>
+
+<!-- related product -->
+  <div class="container">
+    <h1>Related Product</h1>
+    <div class="row"style="margin-top: 30px;">
+
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem; ">
+        <img src="birthday4.png" class="card-img-top" alt="...">
+         <div class="star text-center pt-4">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          <div class="card-body text-light">
+            <h5 class="card-text text-light" >Fruit Overload Cake-Half Kg Eggless</h5>
+            <h4>Rs.575.00</h4>
+            <button class="buy-btn1">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="birthday8.png" class="card-img-top" alt="...">
+          <div class="star text-center pt-4">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          <div class="card-body text-light">
+            <h5 class="card-text">Death By Chocolate Cake Half Kg Eggless</h5>
+            <h4>Rs.987.00</h4>
+            <button class="buy-btn1">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="birthday5.png" class="card-img-top" alt="...">
+          <div class="star text-center pt-4">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          <div class="card-body text-light">
+            <h5 class="card-text">Death By Chocolate Cake Half Kg Eggless</h5>
+                <h4>Rs.987.00</h4>
+            <button class="buy-btn1">Buy Now</button>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="birthday7.png" class="card-img-top" alt="...">
+          <div class="star text-center pt-4">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          <div class="card-body text-light">
+            <h5 class="card-text ">Cream Drop Chocolate Cake Half Kg Eggless </h5>
+            <h4>Rs.625.00</h4>
+            <button class="buy-btn1">Buy Now</button>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+<!-- related product end-->
+
+
+    <!-- footer -->
+    <footer id="footer" class="container">
+      <h1 class="text-center text-light">Cake Bakery</h1>
+      <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tempore incidunt voluptas inventore delectus velit quo veritatis nemo provident debitis!</p>
+      <div class="icons1">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        <i class="fa fa-google" aria-hidden="true"></i>
+        <i class="fa fa-skype" aria-hidden="true"></i>
+      </div>
+    </footer>
+    <!-- footer-->
+
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script>
+  function changeimage(src){
+    document.querySelector("#main_image").src = src;
+  }
+  
+</script>
+ 
+  </body>
+  
+</html>
